@@ -1,8 +1,9 @@
 1) What did the system do? 
-- This utility is aimed to configure multirelease jar, where depending on the client runtime classes can be used
-by clients. Lets say the base of the project is Java 11, however, there are some features from Java 22, that are useful.
+- This utility is aimed to configure multirelease jar, where depending on the client runtime, different java versions 
+of classes(here `ShirtA`) can be used by clients. Let's say the base of the project is Java 11, however, there are some features from Java 22, that are useful.
 So we prepare a jar where class files are present depending on Java version. When clients use this jar, they pick up 
-classes depending on Java versions.
+classes depending on Java versions. More on forward compatibility here :
+  https://maven.apache.org/plugins/maven-compiler-plugin/multirelease.html#single-project
 
 
 2) What other systems have you seen in the wild like that?
